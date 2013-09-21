@@ -7,7 +7,7 @@
 Pod::Spec.new do |s|
   s.name         = "AMPSegmentedViewController"
   s.version      = "0.1.0"
-  s.summary      = "A short description of AMPSegmentedViewController."
+  s.summary      = "A UIViewController container that uses a UISegmentedControl in the UINavigationBar."
   s.description  = <<-DESC
                     An optional longer description of AMPSegmentedViewController
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Alejandro Martinez" => "alexito4@gmail.com" }
-  s.source       = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.source       = { :git => "./", :tag => s.version.to_s }
 
   # s.platform     = :ios, '5.0'
   # s.ios.deployment_target = '5.0'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
 end

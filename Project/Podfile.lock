@@ -1,0 +1,14 @@
+PODS:
+  - AMPSegmentedViewController (0.1.0)
+
+DEPENDENCIES:
+  - AMPSegmentedViewController (from `../`)
+
+EXTERNAL SOURCES:
+  AMPSegmentedViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMPSegmentedViewController: 98d247190e403b5e6cc2a61d0e9e04040af41854
+
+COCOAPODS: 0.25.0
