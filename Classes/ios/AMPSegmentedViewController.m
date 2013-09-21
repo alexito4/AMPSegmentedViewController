@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) UISegmentedControl *segmentedTitle;
 
+@property (nonatomic, strong) UIViewController *selectedVC;
+
 @end
 
 @implementation AMPSegmentedViewController
@@ -72,9 +74,13 @@
 }
 
 - (void)showViewControllerAtIndex:(NSUInteger)index {
+    [self.selectedVC.view removeFromSuperview];
+    
     UIViewController *child = [self.childViewControllers objectAtIndex:index];
     child.view.frame = self.view.frame;
     [self.view addSubview:child.view];
+    
+    self.selectedVC = child;
 }
 
 
