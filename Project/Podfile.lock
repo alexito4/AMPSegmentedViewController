@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AMPSegmentedViewController: 98d247190e403b5e6cc2a61d0e9e04040af41854
+  AMPSegmentedViewController: cddb0fde422f7be0a1c2eaea8e5cd818c159d5cf
 
 COCOAPODS: 0.25.0

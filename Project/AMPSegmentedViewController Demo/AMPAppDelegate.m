@@ -17,15 +17,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-//    [self example1];
+    [self example1];
 //    [self example2];
-    [self example3];
+//    [self example3];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
+// Using addController:
 - (void)example1 {
     AMPSegmentedViewController *segmentedVC = [[AMPSegmentedViewController alloc] init];
     [segmentedVC.view setBackgroundColor:[UIColor magentaColor]];
@@ -37,6 +38,7 @@
     [segmentedVC addController:[TestVC testVCWithTitle:@"^3^"]];
 }
 
+// Using addControllers:
 - (void)example2 {
     NSArray *controllers = @[[TestVC testVCWithTitle:@"The one"],
                              [TestVC testVCWithTitle:@"The second"],
@@ -50,6 +52,7 @@
     [segmentedVC addControllers:controllers];
 }
 
+// Pushing from another UIViewController
 - (void)example3 {
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[TestVC testVCWithTitle:@"Root" andPushOnAppear:YES]];
     self.window.rootViewController = nav;
